@@ -25,21 +25,24 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     return (
       <div className="Container">
+        
+        <Section title="Please leave feedback">
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            onFeedback={this.handleClick}
+          />
+        </Section>
 
-        <p className="Feedback__title">Please leave feedback</p>
-        <FeedbackOptions
-          options={Object.keys(this.state)}
-          onFeedback={this.handleClick}
-        />
+        <Section title="Statistics">
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={this.totalFeedback(this.state)}
+            positivePercentage={this.feedbackPercentage(this.state)}
+          />
+        </Section>
 
-        <p className="Statistics__title">Statistics</p>
-        <Statistics
-          good={good}
-          neutral={neutral}
-          bad={bad}
-          total={this.totalFeedback(this.state)}
-          positivePercentage={this.feedbackPercentage(this.state)}
-        />
       </div>
     );
   }
