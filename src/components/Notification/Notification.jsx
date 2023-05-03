@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Notification.css';
 
 const Notification = ({ message }) => (
     <span className="Notification__value">{message}</span>

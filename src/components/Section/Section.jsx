@@ -5,7 +5,7 @@ import './Section.css';
 
 const Section = ({ title, children }) => {
     return (
-      <section>
+      <section className='Section'>
             <Title title={title} />
                 {children}        
       </section>
