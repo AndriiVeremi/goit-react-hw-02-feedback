@@ -1,0 +1,18 @@
+.Statistics__list {
+list-style: none;
+padding: 0;
+}
+
+.Statistics__item {
+
+}
+
+.Statistics__name {
+font-size: 25px;
+}
+
+.Statistics__value {
+color: #E91E63;
+font-size: 30px;
+/* margin-left: 20px; */
+}
