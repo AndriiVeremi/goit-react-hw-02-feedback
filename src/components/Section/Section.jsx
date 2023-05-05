@@ -4,12 +4,12 @@ import Title from 'components/Title/Title';
 import './Section.css';
 
 const Section = ({ title, children }) => {
-    return (
-      <section className='Section'>
-            <Title title={title} />
-                {children}        
-      </section>
-    );
+  return (
+    <section className="Section">
+      <Title title={title} />
+      {children}
+    </section>
+  );
 };
 
 export default Section;

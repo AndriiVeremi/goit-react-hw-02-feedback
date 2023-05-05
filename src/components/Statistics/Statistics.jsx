@@ -34,7 +34,10 @@ const Statistics = ({
       </li>
       <li className="Statistics__item">
         <p className="Statistics__name">
-          Positive feedback: <span className="Statistics__value">{positivePercentage ? positivePercentage : 0}%</span>
+          Positive feedback:{' '}
+          <span className="Statistics__value">
+            {positivePercentage ? positivePercentage : 0}%
+          </span>
         </p>
       </li>
     </ul>

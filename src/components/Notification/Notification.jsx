@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import './Notification.css';
 
 const Notification = ({ message }) => (
-    <span className="Notification__value">{message}</span>
-    
+  <span className="Notification__value">{message}</span>
 );
 
 export default Notification;

@@ -20,12 +20,11 @@ class App extends Component {
 
   feedbackPercentage = ({ good }) =>
     Math.round((good * 100) / this.totalFeedback(this.state));
-  
+
   render() {
     const { good, neutral, bad } = this.state;
     return (
       <div className="Container">
-        
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -42,7 +41,6 @@ class App extends Component {
             positivePercentage={this.feedbackPercentage(this.state)}
           />
         </Section>
-
       </div>
     );
   }
