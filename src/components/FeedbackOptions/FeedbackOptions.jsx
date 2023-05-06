@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes, { arrayOf } from 'prop-types';
-import './FeedbackOptions.css';
+import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onFeedback }) => {
   return (
-    <ul className="Btn__list">
+    <ul className={css.list}>
       {options.map(option => {
         return (
-          <li key={option} className="Btn__item">
+          <li key={option} className={css.item}>
             <button
               key={option}
               type="button"
               value={option}
               onClick={() => onFeedback(option)}
-              className="Btn"
+              className={css.btn}
             >
               {option}
             </button>

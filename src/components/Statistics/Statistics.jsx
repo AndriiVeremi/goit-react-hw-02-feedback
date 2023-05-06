@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Notification from '../Notification/Notification';
-import './Statistics.css';
+import css from './Statistics.module.css';
 
 const Statistics = ({
   good,
@@ -11,33 +11,31 @@ const Statistics = ({
   positivePercentage = 0,
 }) => {
   return total ? (
-    <ul className="Statistics__list">
-      <li className="Statistics__item">
-        <p className="Statistics__name">
-          Good: <span className="Statistics__value">{good}</span>
+    <ul className={css.stat__list}>
+      <li className={css.stat__item}>
+        <p className={css.stat__name}>
+          Good: <span className={css.stat__value}>{good}</span>
         </p>
       </li>
-      <li className="Statistics__item">
-        <p className="Statistics__name">
-          Neutral: <span className="Statistics__value">{neutral}</span>
+      <li className={css.stat__item}>
+        <p className={css.stat__name}>
+          Neutral: <span className={css.stat__value}>{neutral}</span>
         </p>
       </li>
-      <li className="Statistics__item">
-        <p className="Statistics__name">
-          Bad: <span className="Statistics__value">{bad}</span>
+      <li className={css.stat__item}>
+        <p className={css.stat__name}>
+          Bad: <span className={css.stat__value}>{bad}</span>
         </p>
       </li>
-      <li className="Statistics__item">
-        <p className="Statistics__name">
-          Total: <span className="Statistics__value">{total}</span>
+      <li className={css.stat__item}>
+        <p className={css.stat__name}>
+          Total: <span className={css.stat__value}>{total}</span>
         </p>
       </li>
-      <li className="Statistics__item">
-        <p className="Statistics__name">
+      <li className={css.stat__item}>
+        <p className={css.stat__name}>
           Positive feedback:{' '}
-          <span className="Statistics__value">
-            {positivePercentage || 0}%
-          </span>
+          <span className={css.stat__value}>{positivePercentage || 0}%</span>
         </p>
       </li>
     </ul>

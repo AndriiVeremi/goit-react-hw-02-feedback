@@ -1,16 +1,16 @@
-.Container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
 }
 
-.Feedback__title {
+/* .feedback__title {
   font-size: 35px;
   margin-bottom: 100px;
 }
 
-.Statistics__title {
+.statistics__title {
   font-size: 35px;
   margin-bottom: 50px;
-}
+} */

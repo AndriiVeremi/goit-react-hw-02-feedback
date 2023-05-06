@@ -1,16 +1,16 @@
-.Statistics__list {
+.stat__list {
   list-style: none;
   padding: 0;
 }
 
-.Statistics__item {
+.stat__item {
 }
 
-.Statistics__name {
+.stat__name {
   font-size: 25px;
 }
 
-.Statistics__value {
+.stat__value {
   color: #e91e63;
   font-size: 30px;
 }

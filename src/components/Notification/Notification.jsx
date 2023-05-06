@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Notification.css';
+import css from './Notification.module.css';
 
 const Notification = ({ message }) => (
-  <span className="Notification__value">{message}</span>
+  <span className={css.value}>{message}</span>
 );
 
 export default Notification;

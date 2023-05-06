@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Title from 'components/Title/Title';
-import './Section.css';
+import css from './Section.module.css';
 
 const Section = ({ title, children }) => {
   return (
-    <section className="Section">
+    <section className={css.ection}>
       <Title title={title} />
       {children}
     </section>

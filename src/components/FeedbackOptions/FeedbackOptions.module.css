@@ -1,4 +1,4 @@
-.Btn__list {
+.list {
   background-color: #fff;
   border: 2px dotted #2196f3;
   list-style: none;
@@ -7,11 +7,11 @@
   display: flex;
 }
 
-.Btn__item {
+.item {
   padding: 20px;
 }
 
-.Btn {
+.btn {
   border: 1px solid #2196f3;
   font-size: 15px;
   color: #2196f3;
